@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://fb0ihs4ok2j8"]
+
+[ext_resource type="Script" uid="uid://bux6m8jbfybmo" path="res://label.gd" id="1_0fbet"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
+bg_color = Color(0.427966, 0.00208637, 0.722651, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+
+[node name="Control" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+script = ExtResource("1_0fbet")
